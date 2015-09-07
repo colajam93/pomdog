@@ -12,8 +12,8 @@
     'xcode_settings': {
       'GCC_VERSION': 'com.apple.compilers.llvm.clang.1_0',
       'CLANG_CXX_LANGUAGE_STANDARD': 'c++14',
-      'MACOSX_DEPLOYMENT_TARGET': '10.9',
       'CLANG_CXX_LIBRARY': 'libc++',
+      'CLANG_ENABLE_OBJC_ARC': 'YES',
     },
     'include_dirs': [
       '<@(pomdog_dir)/include',
@@ -32,9 +32,25 @@
         ],
       }],
       ['OS == "mac"', {
+        'xcode_settings': {
+          'MACOSX_DEPLOYMENT_TARGET': '10.9',
+        },
         'link_settings': {
           'libraries': [
             '$(SDKROOT)/System/Library/Frameworks/Cocoa.framework',
+          ],
+        },
+      }],
+      ['OS == "ios"', {
+        'xcode_settings': {
+          'CODE_SIGN_IDENTITY[sdk=iphoneos*]': 'iPhone Developer',
+          'SDKROOT': 'iphoneos',
+          'IPHONEOS_DEPLOYMENT_TARGET': '9.0',
+          'VALIDATE_PRODUCT': 'YES',
+        },
+        'link_settings': {
+          'libraries': [
+            '$(SDKROOT)/System/Library/Frameworks/UIKit.framework',
           ],
         },
       }],
@@ -68,6 +84,44 @@
             'Platform.Cocoa/GameViewController.h',
             'Platform.Cocoa/GameViewController.mm',
           ],
+          'xcode_settings': {
+            'INFOPLIST_FILE': 'Platform.Cocoa/Info.plist',
+            'LD_RUNPATH_SEARCH_PATHS': [
+              '$(inherited)',
+              '@executable_path/../Frameworks',
+            ],
+          },
+          'mac_bundle_resources': [
+            'Platform.Cocoa/Base.lproj/MainMenu.xib',
+            'Platform.Cocoa/English.lproj/InfoPlist.strings',
+            'Platform.Cocoa/Images.xcassets/',
+          ],
+        }],
+        ['OS == "ios"', {
+          'sources': [
+            'Platform.iOS/main.mm',
+            'Platform.iOS/AppDelegate.h',
+            'Platform.iOS/AppDelegate.mm',
+            'Platform.iOS/GameViewController.h',
+            'Platform.iOS/GameViewController.mm',
+            'Platform.iOS/Shaders.metal',
+            'Platform.iOS/SharedStructures.h',
+          ],
+          'xcode_settings': {
+            'ASSETCATALOG_COMPILER_APPICON_NAME': 'AppIcon',
+            'INFOPLIST_FILE': 'Platform.iOS/Info.plist',
+            'LD_RUNPATH_SEARCH_PATHS': [
+              '$(inherited)',
+              '@executable_path/Frameworks',
+            ],
+            'PRODUCT_BUNDLE_IDENTIFIER': 'net.enginetrouble.pomdog.examples.QuickStart',
+            'PRODUCT_NAME': '$(TARGET_NAME)',
+          },
+          'mac_bundle_resources': [
+            'Platform.iOS/Assets.xcassets/',
+            'Platform.iOS/Base.lproj/LaunchScreen.storyboard',
+            'Platform.iOS/Base.lproj/Main.storyboard',
+          ],
         }],
         ['OS == "linux"', {
           'sources': [
@@ -76,19 +130,8 @@
         }],
       ],
       'mac_bundle_resources': [
-        'Platform.Cocoa/Base.lproj/MainMenu.xib',
-        'Platform.Cocoa/English.lproj/InfoPlist.strings',
-        'Platform.Cocoa/Images.xcassets/',
         'Content/',
       ],
-      'xcode_settings': {
-        'INFOPLIST_FILE': 'Platform.Cocoa/Info.plist',
-        'CLANG_ENABLE_OBJC_ARC': 'YES',
-        'LD_RUNPATH_SEARCH_PATHS': [
-          '$(inherited)',
-          '@executable_path/../Frameworks',
-        ],
-      },
     },
   ],
 }
