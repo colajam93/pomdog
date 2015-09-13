@@ -5,5 +5,3 @@
 @interface GameViewController : UIViewController<MTKViewDelegate>
 
 @end
-
-

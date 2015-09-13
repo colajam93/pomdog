@@ -3,6 +3,7 @@
 
 #import <simd/simd.h>
 #import <ModelIO/ModelIO.h>
+#import <Pomdog/Platform/iOS/Bootstrap.hpp>
 
 // The max number of command buffers in flight
 static const NSUInteger kMaxInflightBuffers = 3;
@@ -12,6 +13,8 @@ static const size_t kMaxBytesPerFrame = 1024*1024;
 
 @implementation GameViewController
 {
+    Pomdog::iOS::Bootstrap bootstrap;
+
     // view
     MTKView *_view;
 

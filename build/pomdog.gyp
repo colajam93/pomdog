@@ -391,6 +391,18 @@
       '../src/Platform.Cocoa/OpenGLContextCocoa.mm',
       '../src/Platform.Cocoa/PomdogOpenGLView.mm',
     ],
+    'pomdog_library_ios_sources': [
+      '../include/Pomdog/Platform/iOS/Bootstrap.hpp',
+      '../src/Platform.iOS/Bootstrap.mm',
+      '../src/Platform.iOS/GameHostIOS.hpp',
+      '../src/Platform.iOS/GameHostIOS.mm',
+      '../src/Platform.iOS/GameWindowIOS.hpp',
+      '../src/Platform.iOS/GameWindowIOS.mm',
+      '../src/Platform.iOS/MetalViewController.hpp',
+      '../src/Platform.iOS/MetalViewController.mm',
+      '../src/Platform.iOS/PomdogMetalView.hpp',
+      '../src/Platform.iOS/PomdogMetalView.mm',
+    ],
     'pomdog_library_dxgi_sources': [
       '../src/RenderSystem.DXGI/DXGIFormatHelper.cpp',
       '../src/RenderSystem.DXGI/DXGIFormatHelper.hpp',
@@ -694,6 +706,17 @@
           ],
         },
       }],
+      ['application_platform == "CocoaTouch"', {
+        'sources': [
+          '<@(pomdog_library_ios_sources)',
+        ],
+        'link_settings': {
+          'libraries': [
+            '$(SDKROOT)/System/Library/Frameworks/Foundation.framework',
+            '$(SDKROOT)/System/Library/Frameworks/UIKit.framework',
+          ],
+        },
+      }],
       ['OS == "mac" or OS == "ios"', {
         'sources': [
           '<@(pomdog_library_apple_sources)',
@@ -708,12 +731,6 @@
         'xcode_settings': {
           'IPHONEOS_DEPLOYMENT_TARGET': '9.0',
           'SDKROOT': 'iphoneos',
-        },
-        'link_settings': {
-          'libraries': [
-            '$(SDKROOT)/System/Library/Frameworks/Foundation.framework',
-            '$(SDKROOT)/System/Library/Frameworks/UIKit.framework',
-          ],
         },
       }],
       ['OS == "win"', {
