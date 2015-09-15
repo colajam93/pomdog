@@ -108,7 +108,24 @@ static const size_t kMaxBytesPerFrame = 1024*1024;
     pipelineStateDescriptor.stencilAttachmentPixelFormat = _view.depthStencilPixelFormat;
 
     NSError *error = NULL;
-    _pipelineState = [_device newRenderPipelineStateWithDescriptor:pipelineStateDescriptor error:&error];
+//    _pipelineState = [_device newRenderPipelineStateWithDescriptor:pipelineStateDescriptor error:&error];
+    MTLRenderPipelineReflection* reflection = nil;
+    _pipelineState = [_device newRenderPipelineStateWithDescriptor:pipelineStateDescriptor
+        options:MTLPipelineOptionArgumentInfo reflection:&reflection error:&error];
+
+    {
+        NSArray<MTLArgument*>* arguments = [reflection vertexArguments];
+        for (NSUInteger i = 0; i < arguments.count; ++i) {
+            MTLArgument* argument = arguments[i];
+            NSLog(@"name = %@, bufferDataSize=%lu, bufferAlignment=%lu, type=%lu, access=%lu, index=%lu",
+                argument.name, (unsigned long)argument.bufferDataSize,
+                (unsigned long)argument.bufferAlignment, (unsigned long)argument.type,
+                (unsigned long)argument.access, (unsigned long)argument.index);
+        }
+    }
+
+
+
     if (!_pipelineState) {
         NSLog(@"Failed to created pipeline state, error %@", error);
     }
