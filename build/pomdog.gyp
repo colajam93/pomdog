@@ -12,7 +12,7 @@
     ['OS == "mac"', {
       'variables': {
         'application_platform%': 'Cocoa',
-        'renderers%': ['GL4'],
+        'renderers%': ['GL4', 'Metal'],
         'audio%': 'OpenAL',
         'input_devices%': [],
       },
@@ -391,6 +391,10 @@
       '../src/Platform.Cocoa/OpenGLContextCocoa.mm',
       '../src/Platform.Cocoa/PomdogOpenGLView.mm',
     ],
+    'pomdog_library_cocoa_metal_sources': [
+      '../src/Platform.Cocoa/PomdogMetalViewController.hpp',
+      '../src/Platform.Cocoa/PomdogMetalViewController.mm',
+    ],
     'pomdog_library_ios_sources': [
       '../include/Pomdog/Platform/iOS/Bootstrap.hpp',
       '../src/Platform.iOS/Bootstrap.mm',
@@ -604,6 +608,9 @@
         ],
       }],
       ['"Metal" in renderers and OS == "mac"', {
+        'sources': [
+          '<@(pomdog_library_cocoa_metal_sources)',
+        ],
         'link_settings': {
           'libraries': [
             '$(SDKROOT)/System/Library/Frameworks/Metal.framework',
@@ -724,7 +731,7 @@
       }],
       ['OS == "mac"', {
         'xcode_settings': {
-          'MACOSX_DEPLOYMENT_TARGET': '10.9',
+          'MACOSX_DEPLOYMENT_TARGET': '10.11',
         },
       }],
       ['OS == "ios"', {
