@@ -392,6 +392,8 @@
       '../src/Platform.Cocoa/PomdogOpenGLView.mm',
     ],
     'pomdog_library_cocoa_metal_sources': [
+      '../src/Platform.Cocoa/GameHostMetal.hpp',
+      '../src/Platform.Cocoa/GameHostMetal.mm',
       '../src/Platform.Cocoa/PomdogMetalViewController.hpp',
       '../src/Platform.Cocoa/PomdogMetalViewController.mm',
     ],

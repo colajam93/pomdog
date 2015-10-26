@@ -38,6 +38,7 @@
         'link_settings': {
           'libraries': [
             '$(SDKROOT)/System/Library/Frameworks/Cocoa.framework',
+            '$(SDKROOT)/System/Library/Frameworks/MetalKit.framework',
           ],
         },
       }],

@@ -11,7 +11,7 @@
 #ifdef DEBUG
     Pomdog::ScopedConnection connection;
 #endif
-    Pomdog::Cocoa::Bootstrap bootstrap;
+    Pomdog::Cocoa::BootstrapMetal bootstrap;
 }
 
 - (void)viewDidLoad
@@ -41,6 +41,26 @@
     bootstrap.Run([](std::shared_ptr<Pomdog::GameHost> const& gameHost) {
         return std::make_unique<QuickStart::QuickStartGame>(gameHost);
     });
+
+//    _constantDataBufferIndex = 0;
+//    _inflight_semaphore = dispatch_semaphore_create(3);
+//    
+//    [self _setupMetal];
+//    [self _setupView];
+//    [self _loadAssets];
+//    [self _reshape];
+}
+
+- (void)mtkView:(nonnull MTKView *)view drawableSizeWillChange:(CGSize)size
+{
+    bootstrap.DrawableSizeWillChange(view, size);
+}
+
+- (void)drawInMTKView:(nonnull MTKView *)view
+{
+    @autoreleasepool {
+        bootstrap.DrawInMTKView(view);
+    }
 }
 
 @end

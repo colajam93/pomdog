@@ -1,6 +1,6 @@
-#import "Pomdog/Platform/Cocoa/PomdogOpenGLView.hpp"
 #import <Cocoa/Cocoa.h>
+#import <MetalKit/MTKView.h>
 
-@interface GameView : PomdogOpenGLView
+@interface GameView : MTKView
 
 @end
