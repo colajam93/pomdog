@@ -12,13 +12,14 @@ namespace Detail {
 namespace Vulkan {
 //-----------------------------------------------------------------------
 Texture2DVulkan::Texture2DVulkan(
-    ::VkDevice device,
+    ::VkDevice deviceIn,
     ::VkPhysicalDevice physicalDevice,
     std::int32_t pixelWidth,
     std::int32_t pixelHeight,
     std::int32_t levelCount,
     SurfaceFormat format)
-    : image(nullptr)
+    : device(deviceIn)
+    , image(nullptr)
     , deviceMemory(nullptr)
     , view(nullptr)
 {
@@ -67,6 +68,22 @@ Texture2DVulkan::Texture2DVulkan(
     POMDOG_THROW_EXCEPTION(std::runtime_error, "Not implemented");
 
     ///@todo Not implemented
+}
+//-----------------------------------------------------------------------
+Texture2DVulkan::~Texture2DVulkan()
+{
+    if (image != nullptr) {
+        POMDOG_ASSERT(device != nullptr);
+        vkDestroyImage(device, image, nullptr);
+    }
+    if (deviceMemory != nullptr) {
+        POMDOG_ASSERT(device != nullptr);
+        vkFreeMemory(device, deviceMemory, nullptr);
+    }
+    if (view != nullptr) {
+        POMDOG_ASSERT(device != nullptr);
+        vkDestroyImageView(device, view, nullptr);
+    }
 }
 //-----------------------------------------------------------------------
 void Texture2DVulkan::SetData(

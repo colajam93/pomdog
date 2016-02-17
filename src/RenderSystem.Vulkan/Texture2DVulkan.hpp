@@ -20,6 +20,8 @@ public:
         std::int32_t levelCount,
         SurfaceFormat format);
 
+    ~Texture2DVulkan();
+
     void SetData(
         std::int32_t pixelWidth,
         std::int32_t pixelHeight,
@@ -28,6 +30,7 @@ public:
         void const* pixelData) override;
 
 private:
+    ::VkDevice device;
     ::VkImage image;
     ::VkDeviceMemory deviceMemory;
     ::VkImageView view;
