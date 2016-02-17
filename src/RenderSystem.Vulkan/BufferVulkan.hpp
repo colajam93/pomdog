@@ -25,6 +25,8 @@ public:
         BufferUsage bufferUsage,
         VkBufferUsageFlags usageFlags);
 
+    ~BufferVulkan();
+
     void GetData(
         std::size_t offsetInBytes,
         void* destination,
@@ -38,9 +40,10 @@ public:
     VkBuffer GetBuffer() const;
 
 private:
-    VkBuffer nativeBuffer;
-    VkDeviceMemory deviceMemory;
-    VkDescriptorBufferInfo descriptor;
+    ::VkDevice device;
+    ::VkBuffer nativeBuffer;
+    ::VkDeviceMemory deviceMemory;
+    ::VkDescriptorBufferInfo descriptor;
 };
 
 } // namespace Vulkan

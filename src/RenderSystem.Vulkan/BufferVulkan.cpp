@@ -41,11 +41,12 @@ VkBufferCreateInfo ToVkBufferCreateInfo(
 } // unnamed namespace
 //-----------------------------------------------------------------------
 BufferVulkan::BufferVulkan(
-    ::VkDevice device,
+    ::VkDevice deviceIn,
     std::size_t sizeInBytes,
     BufferUsage bufferUsage,
     VkBufferUsageFlags usageFlags)
-    : nativeBuffer(nullptr)
+    : device(deviceIn)
+    , nativeBuffer(nullptr)
     , deviceMemory(nullptr)
 {
     POMDOG_ASSERT(device != nullptr);
@@ -63,12 +64,13 @@ BufferVulkan::BufferVulkan(
 }
 //-----------------------------------------------------------------------
 BufferVulkan::BufferVulkan(
-    ::VkDevice device,
+    ::VkDevice deviceIn,
     void const* sourceData,
     std::size_t sizeInBytes,
     BufferUsage bufferUsage,
     VkBufferUsageFlags usageFlags)
-    : nativeBuffer(nullptr)
+    : device(deviceIn)
+    , nativeBuffer(nullptr)
     , deviceMemory(nullptr)
 {
     POMDOG_ASSERT(device != nullptr);
@@ -119,6 +121,18 @@ BufferVulkan::BufferVulkan(
         // FUS RO DAH!
         POMDOG_THROW_EXCEPTION(std::runtime_error,
             "Failed to call vkBindBufferMemory()");
+    }
+}
+//-----------------------------------------------------------------------
+BufferVulkan::~BufferVulkan()
+{
+    if (nativeBuffer != nullptr) {
+        POMDOG_ASSERT(device != nullptr);
+        vkDestroyBuffer(device, nativeBuffer, nullptr);
+    }
+    if (deviceMemory != nullptr) {
+        POMDOG_ASSERT(device != nullptr);
+        vkFreeMemory(device, deviceMemory, nullptr);
     }
 }
 //-----------------------------------------------------------------------
