@@ -4,6 +4,7 @@
 
 #include "../RenderSystem/NativeSamplerState.hpp"
 #include "Pomdog/Graphics/detail/ForwardDeclarations.hpp"
+#include <vulkan/vulkan.h>
 
 namespace Pomdog {
 namespace Detail {
@@ -11,8 +12,17 @@ namespace Vulkan {
 
 class SamplerStateVulkan final : public NativeSamplerState {
 public:
+    SamplerStateVulkan(
+        ::VkDevice device,
+        SamplerDescription const& description);
+
+    ~SamplerStateVulkan();
+
+    ::VkSampler GetSamplerState() const;
 
 private:
+    ::VkDevice device;
+    ::VkSampler sampler;
 };
 
 } // namespace Vulkan
