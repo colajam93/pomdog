@@ -4,6 +4,7 @@
 
 #include "../RenderSystem/NativeTexture2D.hpp"
 #include "Pomdog/Graphics/detail/ForwardDeclarations.hpp"
+#include <vulkan/vulkan.h>
 
 namespace Pomdog {
 namespace Detail {
@@ -11,8 +12,25 @@ namespace Vulkan {
 
 class Texture2DVulkan final : public NativeTexture2D {
 public:
+    Texture2DVulkan(
+        ::VkDevice device,
+        ::VkPhysicalDevice physicalDevice,
+        std::int32_t pixelWidth,
+        std::int32_t pixelHeight,
+        std::int32_t levelCount,
+        SurfaceFormat format);
+
+    void SetData(
+        std::int32_t pixelWidth,
+        std::int32_t pixelHeight,
+        std::int32_t levelCount,
+        SurfaceFormat format,
+        void const* pixelData) override;
 
 private:
+    ::VkImage image;
+    ::VkDeviceMemory deviceMemory;
+    ::VkImageView view;
 };
 
 } // namespace Vulkan
