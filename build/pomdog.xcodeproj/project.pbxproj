@@ -148,6 +148,119 @@
 		A992AF031C2B1168003170C9 /* Coordinate2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A992AF001C2B1168003170C9 /* Coordinate2D.cpp */; };
 		A992AF041C2B1168003170C9 /* Coordinate3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A992AF011C2B1168003170C9 /* Coordinate3D.cpp */; };
 		A992AF051C2B1168003170C9 /* Coordinate3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A992AF011C2B1168003170C9 /* Coordinate3D.cpp */; };
+		A9BCA0851C775F1200FB3294 /* GameClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADAB2A4E3550672F3EC669D9 /* GameClock.cpp */; };
+		A9BCA0861C775F1200FB3294 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A09921A442DDB282C9D44C17 /* Timer.cpp */; };
+		A9BCA0871C775F1200FB3294 /* AudioClip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDD1FD28A2F24D79778915D7 /* AudioClip.cpp */; };
+		A9BCA0881C775F1200FB3294 /* AudioEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1C2CADE137F8070FBF0CD44 /* AudioEngine.cpp */; };
+		A9BCA0891C775F1200FB3294 /* SoundEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3172893FA0E4885450449F2E /* SoundEffect.cpp */; };
+		A9BCA08A1C775F1200FB3294 /* AssetDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 862A27768A8B2F02F49D6548 /* AssetDictionary.cpp */; };
+		A9BCA08B1C775F1200FB3294 /* AssetLoaderContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC27D48A6B2A63C9F1A650A9 /* AssetLoaderContext.cpp */; };
+		A9BCA08C1C775F1200FB3294 /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2279CD1BE0F50CD696851DA5 /* AssetManager.cpp */; };
+		A9BCA08D1C775F1200FB3294 /* PipelineStateBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A8619258242CAE058476558 /* PipelineStateBuilder.cpp */; };
+		A9BCA08E1C775F1200FB3294 /* ShaderBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F597E6DCF0608CD6B745C3E /* ShaderBuilder.cpp */; };
+		A9BCA08F1C775F1200FB3294 /* AudioClipLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9524A580BCEF4C5E9F56EB43 /* AudioClipLoader.cpp */; };
+		A9BCA0901C775F1200FB3294 /* Texture2DLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5DA6989A7C77DAC68BD5355 /* Texture2DLoader.cpp */; };
+		A9BCA0911C775F1200FB3294 /* DDSTextureReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F99F8A89DE73BF98171E2441 /* DDSTextureReader.cpp */; };
+		A9BCA0921C775F1200FB3294 /* MSWaveAudioLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF76618636C36F96145C2A9 /* MSWaveAudioLoader.cpp */; };
+		A9BCA0931C775F1200FB3294 /* PNGTextureReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7855CAE795F3A9F1B3F59EC5 /* PNGTextureReader.cpp */; };
+		A9BCA0941C775F1200FB3294 /* ClearOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0D412B71767371317FA2E734 /* ClearOptions.cpp */; };
+		A9BCA0951C775F1200FB3294 /* ConstantBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7B6B9ADFEE35269D5B261C8 /* ConstantBuffer.cpp */; };
+		A9BCA0961C775F1200FB3294 /* EffectBinaryParameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EB459D4407794972524D9B2 /* EffectBinaryParameter.cpp */; };
+		A9BCA0971C775F1200FB3294 /* EffectReflection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBA2A679E40483918C924A /* EffectReflection.cpp */; };
+		A9BCA0981C775F1200FB3294 /* GraphicsCommandList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB4F85AB0B59334913B62A4B /* GraphicsCommandList.cpp */; };
+		A9BCA0991C775F1200FB3294 /* GraphicsCommandQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37D0464D1E5DE9AC99F9A5E4 /* GraphicsCommandQueue.cpp */; };
+		A9BCA09A1C775F1200FB3294 /* GraphicsDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0732B0AF8F54DAE712BFE595 /* GraphicsDevice.cpp */; };
+		A9BCA09B1C775F1200FB3294 /* IndexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92BBCCA3FF745A4ED038A309 /* IndexBuffer.cpp */; };
+		A9BCA09C1C775F1200FB3294 /* InputLayoutHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8163A1A816853F400B91C2F1 /* InputLayoutHelper.cpp */; };
+		A9BCA09D1C775F1200FB3294 /* PipelineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7E14E3AE6B465875CD29816 /* PipelineState.cpp */; };
+		A9BCA09E1C775F1200FB3294 /* RenderTarget2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFD65037ECF5B4F1E38BB17 /* RenderTarget2D.cpp */; };
+		A9BCA09F1C775F1200FB3294 /* SamplerState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C3EC7CE5164FFC333F21A /* SamplerState.cpp */; };
+		A9BCA0A01C775F1200FB3294 /* Texture2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDF31397BF0CF2C9021CEEA9 /* Texture2D.cpp */; };
+		A9BCA0A11C775F1200FB3294 /* Viewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A651CE22C9DE13920AB99E12 /* Viewport.cpp */; };
+		A9BCA0A21C775F1200FB3294 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F97885F56CF10EA62B2375A /* VertexBuffer.cpp */; };
+		A9BCA0A31C775F1200FB3294 /* GLSLCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF6B97894802CD7445E0EC10 /* GLSLCompiler.cpp */; };
+		A9BCA0A41C775F1200FB3294 /* Coordinate2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A992AF001C2B1168003170C9 /* Coordinate2D.cpp */; };
+		A9BCA0A51C775F1200FB3294 /* HLSLCompiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F976B8B50141FE39C87B699D /* HLSLCompiler.cpp */; };
+		A9BCA0A61C775F1200FB3294 /* KeyboardState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7D5A98E477FB0CDE2089FBD /* KeyboardState.cpp */; };
+		A9BCA0A71C775F1200FB3294 /* InputDeviceFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7379F84C54E861AD074AA1C /* InputDeviceFactory.cpp */; };
+		A9BCA0A81C775F1200FB3294 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA837DAFD014705086479CB4 /* Log.cpp */; };
+		A9BCA0A91C775F1200FB3294 /* LogChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4406B12793DCB512528775FC /* LogChannel.cpp */; };
+		A9BCA0AA1C775F1200FB3294 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48BCAC6E648E7B5E3B773BA6 /* BoundingBox.cpp */; };
+		A9BCA0AB1C775F1200FB3294 /* BoundingBox2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1511246CD9A277492F0FC3DD /* BoundingBox2D.cpp */; };
+		A9BCA0AC1C775F1200FB3294 /* BoundingCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B85BC78383398FBF4414326 /* BoundingCircle.cpp */; };
+		A9BCA0AD1C775F1200FB3294 /* BoundingSphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23AD66A6372EA23853297EBF /* BoundingSphere.cpp */; };
+		A9BCA0AE1C775F1200FB3294 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C4D55AF0FA9C943AFEB7E91 /* Color.cpp */; };
+		A9BCA0AF1C775F1200FB3294 /* MathHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FB9357487DBB6F9C5AAC0 /* MathHelper.cpp */; };
+		A9BCA0B01C775F1200FB3294 /* Ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EB2111ED9B45715040451A9 /* Ray.cpp */; };
+		A9BCA0B11C775F1200FB3294 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F39F11986F92AD3E6A55D633 /* Rectangle.cpp */; };
+		A9BCA0B21C775F1200FB3294 /* FloatingPointMatrix2x2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EE4770F6D584FADF7648727 /* FloatingPointMatrix2x2.cpp */; };
+		A9BCA0B31C775F1200FB3294 /* FloatingPointMatrix3x2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54A52D4906919EB149099EE8 /* FloatingPointMatrix3x2.cpp */; };
+		A9BCA0B41C775F1200FB3294 /* FloatingPointMatrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 029A2B232511421D3FDB9FAC /* FloatingPointMatrix3x3.cpp */; };
+		A9BCA0B51C775F1200FB3294 /* FloatingPointMatrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A9D82D0E533AAF3A8D57AC /* FloatingPointMatrix4x4.cpp */; };
+		A9BCA0B61C775F1200FB3294 /* FloatingPointQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB8065B15E3C906F2BE8A1 /* FloatingPointQuaternion.cpp */; };
+		A9BCA0B71C775F1200FB3294 /* FloatingPointVector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C99D84B84F43D1176C600FC /* FloatingPointVector2.cpp */; };
+		A9BCA0B81C775F1200FB3294 /* FloatingPointVector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01B9F8CE68C05D1EF64A4711 /* FloatingPointVector3.cpp */; };
+		A9BCA0B91C775F1200FB3294 /* FloatingPointVector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9AE680DD0E3FCEA11AF8F48 /* FloatingPointVector4.cpp */; };
+		A9BCA0BA1C775F1200FB3294 /* GraphicsCommandListImmediate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13DFD59376FA25B8994E3399 /* GraphicsCommandListImmediate.cpp */; };
+		A9BCA0BB1C775F1200FB3294 /* GraphicsCommandQueueImmediate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF7478713A3FBFCCEA57D /* GraphicsCommandQueueImmediate.cpp */; };
+		A9BCA0BC1C775F1200FB3294 /* GraphicsContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC9223DBAF706552AD1C54C8 /* GraphicsContext.cpp */; };
+		A9BCA0BD1C775F1200FB3294 /* SurfaceFormatHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 170661792862A0323C40CDC3 /* SurfaceFormatHelper.cpp */; };
+		A9BCA0BE1C775F1200FB3294 /* TextureHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5CAF3CE6CC2A63DB55AA977 /* TextureHelper.cpp */; };
+		A9BCA0BF1C775F1200FB3294 /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDB14E0E5E4036DB4FF8716B /* Connection.cpp */; };
+		A9BCA0C01C775F1200FB3294 /* ConnectionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2AEB843C0EAE82FED23106B /* ConnectionList.cpp */; };
+		A9BCA0C11C775F1200FB3294 /* EventQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72397B6027D9DE47C449E8A9 /* EventQueue.cpp */; };
+		A9BCA0C21C775F1200FB3294 /* ScopedConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 269AFA5F80C27EA231390663 /* ScopedConnection.cpp */; };
+		A9BCA0C31C775F1200FB3294 /* CRC32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 874BAF3803BCB9751C9574C4 /* CRC32.cpp */; };
+		A9BCA0C41C775F1200FB3294 /* PathHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB111727E9143A507A0C10 /* PathHelper.cpp */; };
+		A9BCA0C51C775F1200FB3294 /* StringHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D07BE9AF32EED1D5F74BE69A /* StringHelper.cpp */; };
+		A9BCA0C61C775F1200FB3294 /* BlendStateGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94616EC490F60A4FC4DED3B7 /* BlendStateGL4.cpp */; };
+		A9BCA0C71C775F1200FB3294 /* BufferGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C80CF7400944C955DC0F99EA /* BufferGL4.cpp */; };
+		A9BCA0C81C775F1200FB3294 /* DepthStencilStateGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09B86E4752B8088B0C3A217A /* DepthStencilStateGL4.cpp */; };
+		A9BCA0C91C775F1200FB3294 /* EffectReflectionGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9577C4F0F2F45BC080E9625 /* EffectReflectionGL4.cpp */; };
+		A9BCA0CA1C775F1200FB3294 /* ErrorChecker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74C791C392D2DF46A553FC0F /* ErrorChecker.cpp */; };
+		A9BCA0CB1C775F1200FB3294 /* Coordinate3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A992AF011C2B1168003170C9 /* Coordinate3D.cpp */; };
+		A9BCA0CC1C775F1200FB3294 /* GraphicsContextGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6020C9B2088C636A0CFB1082 /* GraphicsContextGL4.cpp */; };
+		A9BCA0CD1C775F1200FB3294 /* GraphicsDeviceGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4753F82F9416C7DE5A5F2655 /* GraphicsDeviceGL4.cpp */; };
+		A9BCA0CE1C775F1200FB3294 /* InputLayoutGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA08E5E159414735DB8F691E /* InputLayoutGL4.cpp */; };
+		A9BCA0CF1C775F1200FB3294 /* PipelineStateGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 860807EA5D77E832BD5DBCB4 /* PipelineStateGL4.cpp */; };
+		A9BCA0D01C775F1200FB3294 /* RasterizerStateGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8FF0EE7B469693B84F20E /* RasterizerStateGL4.cpp */; };
+		A9BCA0D11C775F1200FB3294 /* RenderTarget2DGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72CA22E1FE9B445BAA963FBF /* RenderTarget2DGL4.cpp */; };
+		A9BCA0D21C775F1200FB3294 /* SamplerStateGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC908E294094E4F0DBC625D1 /* SamplerStateGL4.cpp */; };
+		A9BCA0D31C775F1200FB3294 /* ShaderGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46AC9E4A07CEF05AAD31AF13 /* ShaderGL4.cpp */; };
+		A9BCA0D41C775F1200FB3294 /* Texture2DGL4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C56C956CFAFF61E6576773 /* Texture2DGL4.cpp */; };
+		A9BCA0D51C775F1200FB3294 /* AudioClipAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F15A5217D38E950360A6A5 /* AudioClipAL.cpp */; };
+		A9BCA0D61C775F1200FB3294 /* AudioEngineAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E6B1323537C7C990BE1436C /* AudioEngineAL.cpp */; };
+		A9BCA0D71C775F1200FB3294 /* ContextOpenAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84593683287596DBBBBFBDEC /* ContextOpenAL.cpp */; };
+		A9BCA0D81C775F1200FB3294 /* ErrorCheckerAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66802D7806B0E296795BD9D4 /* ErrorCheckerAL.cpp */; };
+		A9BCA0D91C775F1200FB3294 /* SoundEffectAL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA22D54D9116136E69EF2E3 /* SoundEffectAL.cpp */; };
+		A9BCA0DA1C775F1200FB3294 /* Bootstrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0C11BC845983DFAFDEC6756 /* Bootstrap.mm */; };
+		A9BCA0DB1C775F1200FB3294 /* CocoaWindowDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3382639C9E3AA9238472ABB9 /* CocoaWindowDelegate.mm */; };
+		A9BCA0DC1C775F1200FB3294 /* GameHostCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9C3D114115E6C3A619E8CF9 /* GameHostCocoa.mm */; };
+		A9BCA0DD1C775F1200FB3294 /* GameWindowCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14F99439DD2A820772CCB45F /* GameWindowCocoa.mm */; };
+		A9BCA0DE1C775F1200FB3294 /* KeyboardCocoa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 678BDC1DC932B3C09FAEFEC2 /* KeyboardCocoa.cpp */; };
+		A9BCA0DF1C775F1200FB3294 /* MouseCocoa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80B5948D01FB98ADEA01D578 /* MouseCocoa.cpp */; };
+		A9BCA0E01C775F1200FB3294 /* OpenGLContextCocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6795D43CC878CEB35FA67CB3 /* OpenGLContextCocoa.mm */; };
+		A9BCA0E11C775F1200FB3294 /* PomdogOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95A9AA9F5E520A294039FF38 /* PomdogOpenGLView.mm */; };
+		A9BCA0E21C775F1200FB3294 /* FileSystemApple.mm in Sources */ = {isa = PBXBuildFile; fileRef = A02355510B5738D6BF9B3877 /* FileSystemApple.mm */; };
+		A9BCA0E31C775F1200FB3294 /* TimeSourceApple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FFDFD798BB9414872171248 /* TimeSourceApple.cpp */; };
+		A9BCA0E51C775F1200FB3294 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE06E0DEEBFD77A7D8BBB0 /* libpng.a */; };
+		A9BCA0E61C775F1200FB3294 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DEC4E495A2A3E49BFD61E5 /* libzlib.a */; };
+		A9BCA0E71C775F1200FB3294 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D641901C343012006E14E0 /* AudioToolbox.framework */; };
+		A9BCA0E81C775F1200FB3294 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F247CD851F16A8BCEC2E5BA1 /* Cocoa.framework */; };
+		A9BCA0E91C775F1200FB3294 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67C9ABE05AB8179C6615644 /* OpenAL.framework */; };
+		A9BCA0EA1C775F1200FB3294 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB039FAE65C607A60DDBB49C /* OpenGL.framework */; };
+		A9BCA0EB1C775F1200FB3294 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AE4521498F69CE846F2EFB /* QuartzCore.framework */; };
+		A9BCA1271C77604F00FB3294 /* BufferMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1141C77604F00FB3294 /* BufferMetal.mm */; };
+		A9BCA1281C77604F00FB3294 /* EffectReflectionMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1161C77604F00FB3294 /* EffectReflectionMetal.mm */; };
+		A9BCA1291C77604F00FB3294 /* GraphicsContextMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1181C77604F00FB3294 /* GraphicsContextMetal.mm */; };
+		A9BCA12A1C77604F00FB3294 /* GraphicsDeviceMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA11A1C77604F00FB3294 /* GraphicsDeviceMetal.mm */; };
+		A9BCA12B1C77604F00FB3294 /* MetalFormatHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA11C1C77604F00FB3294 /* MetalFormatHelper.mm */; };
+		A9BCA12C1C77604F00FB3294 /* PipelineStateMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA11E1C77604F00FB3294 /* PipelineStateMetal.mm */; };
+		A9BCA12D1C77604F00FB3294 /* RenderTarget2DMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1201C77604F00FB3294 /* RenderTarget2DMetal.mm */; };
+		A9BCA12E1C77604F00FB3294 /* SamplerStateMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1221C77604F00FB3294 /* SamplerStateMetal.mm */; };
+		A9BCA12F1C77604F00FB3294 /* ShaderMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1241C77604F00FB3294 /* ShaderMetal.mm */; };
+		A9BCA1301C77604F00FB3294 /* Texture2DMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1261C77604F00FB3294 /* Texture2DMetal.mm */; };
+		A9BCA1321C77609E00FB3294 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BCA1311C77609E00FB3294 /* Metal.framework */; };
 		A9D641861C342F59006E14E0 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE06E0DEEBFD77A7D8BBB0 /* libpng.a */; };
 		A9D641871C342F5F006E14E0 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DEC4E495A2A3E49BFD61E5 /* libzlib.a */; };
 		A9D641911C343012006E14E0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D641901C343012006E14E0 /* AudioToolbox.framework */; };
@@ -219,6 +332,20 @@
 			containerPortal = 0EEE1584DE8DFC5F422E85CC /* zlib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 71C051910E94E0D5C79129A5;
+			remoteInfo = zlib_static;
+		};
+		A9BCA0811C775F1200FB3294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31E97AB9CDD9BFFD39388913 /* libpng.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ED0FBBBD08C4B5967CE24C3;
+			remoteInfo = libpng_static;
+		};
+		A9BCA0831C775F1200FB3294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EEE1584DE8DFC5F422E85CC /* zlib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB506104E3F8918DEB511B2;
 			remoteInfo = zlib_static;
 		};
 		A9D641881C342FBF006E14E0 /* PBXContainerItemProxy */ = {
@@ -469,6 +596,28 @@
 		A992AF001C2B1168003170C9 /* Coordinate2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coordinate2D.cpp; sourceTree = "<group>"; };
 		A992AF011C2B1168003170C9 /* Coordinate3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coordinate3D.cpp; sourceTree = "<group>"; };
 		A9AE680DD0E3FCEA11AF8F48 /* FloatingPointVector4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FloatingPointVector4.cpp; sourceTree = "<group>"; };
+		A9BCA0EF1C775F1200FB3294 /* libpomdog+Metal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libpomdog+Metal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9BCA1131C77604F00FB3294 /* BufferMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BufferMetal.hpp; sourceTree = "<group>"; };
+		A9BCA1141C77604F00FB3294 /* BufferMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BufferMetal.mm; sourceTree = "<group>"; };
+		A9BCA1151C77604F00FB3294 /* EffectReflectionMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectReflectionMetal.hpp; sourceTree = "<group>"; };
+		A9BCA1161C77604F00FB3294 /* EffectReflectionMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EffectReflectionMetal.mm; sourceTree = "<group>"; };
+		A9BCA1171C77604F00FB3294 /* GraphicsContextMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GraphicsContextMetal.hpp; sourceTree = "<group>"; };
+		A9BCA1181C77604F00FB3294 /* GraphicsContextMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GraphicsContextMetal.mm; sourceTree = "<group>"; };
+		A9BCA1191C77604F00FB3294 /* GraphicsDeviceMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GraphicsDeviceMetal.hpp; sourceTree = "<group>"; };
+		A9BCA11A1C77604F00FB3294 /* GraphicsDeviceMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GraphicsDeviceMetal.mm; sourceTree = "<group>"; };
+		A9BCA11B1C77604F00FB3294 /* MetalFormatHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MetalFormatHelper.hpp; sourceTree = "<group>"; };
+		A9BCA11C1C77604F00FB3294 /* MetalFormatHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalFormatHelper.mm; sourceTree = "<group>"; };
+		A9BCA11D1C77604F00FB3294 /* PipelineStateMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PipelineStateMetal.hpp; sourceTree = "<group>"; };
+		A9BCA11E1C77604F00FB3294 /* PipelineStateMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PipelineStateMetal.mm; sourceTree = "<group>"; };
+		A9BCA11F1C77604F00FB3294 /* RenderTarget2DMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RenderTarget2DMetal.hpp; sourceTree = "<group>"; };
+		A9BCA1201C77604F00FB3294 /* RenderTarget2DMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RenderTarget2DMetal.mm; sourceTree = "<group>"; };
+		A9BCA1211C77604F00FB3294 /* SamplerStateMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SamplerStateMetal.hpp; sourceTree = "<group>"; };
+		A9BCA1221C77604F00FB3294 /* SamplerStateMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SamplerStateMetal.mm; sourceTree = "<group>"; };
+		A9BCA1231C77604F00FB3294 /* ShaderMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShaderMetal.hpp; sourceTree = "<group>"; };
+		A9BCA1241C77604F00FB3294 /* ShaderMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShaderMetal.mm; sourceTree = "<group>"; };
+		A9BCA1251C77604F00FB3294 /* Texture2DMetal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Texture2DMetal.hpp; sourceTree = "<group>"; };
+		A9BCA1261C77604F00FB3294 /* Texture2DMetal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture2DMetal.mm; sourceTree = "<group>"; };
+		A9BCA1311C77609E00FB3294 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		A9D641901C343012006E14E0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AA4220AFBD6F377F07163A1E /* EffectAnnotation.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = EffectAnnotation.hpp; sourceTree = "<group>"; };
 		AAF6F831C87CDE6EB35B140C /* AudioToolBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolBox.framework; path = System/Library/Frameworks/AudioToolBox.framework; sourceTree = SDKROOT; };
@@ -587,6 +736,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A9BCA0E41C775F1200FB3294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9BCA0E51C775F1200FB3294 /* libpng.a in Frameworks */,
+				A9BCA0E61C775F1200FB3294 /* libzlib.a in Frameworks */,
+				A9BCA0E71C775F1200FB3294 /* AudioToolbox.framework in Frameworks */,
+				A9BCA0E81C775F1200FB3294 /* Cocoa.framework in Frameworks */,
+				A9BCA1321C77609E00FB3294 /* Metal.framework in Frameworks */,
+				A9BCA0E91C775F1200FB3294 /* OpenAL.framework in Frameworks */,
+				A9BCA0EA1C775F1200FB3294 /* OpenGL.framework in Frameworks */,
+				A9BCA0EB1C775F1200FB3294 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB074B611B8E01A59E3EF9CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -665,6 +829,7 @@
 			children = (
 				9C362E5974D2BDFA88D4823E /* libpomdog.a */,
 				85BA12FF956A55EF787812A4 /* Pomdog.framework */,
+				A9BCA0EF1C775F1200FB3294 /* libpomdog+Metal.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -859,6 +1024,7 @@
 				F8C903E69E0CF28E9DCB001A /* Platform.Cocoa */,
 				8360309E4667B011AD3E6F2F /* RenderSystem */,
 				DE5CBBB57ACC2516919030E9 /* RenderSystem.GL4 */,
+				A9BCA07E1C775E7600FB3294 /* RenderSystem.Metal */,
 				30140D8CEFA462A690107323 /* Signals */,
 				017714392C6763961A9404CF /* SoundSystem.OpenAL */,
 				582932A6CEFF570AC75B5E15 /* Utility */,
@@ -1090,6 +1256,33 @@
 			path = Basic;
 			sourceTree = "<group>";
 		};
+		A9BCA07E1C775E7600FB3294 /* RenderSystem.Metal */ = {
+			isa = PBXGroup;
+			children = (
+				A9BCA1131C77604F00FB3294 /* BufferMetal.hpp */,
+				A9BCA1141C77604F00FB3294 /* BufferMetal.mm */,
+				A9BCA1151C77604F00FB3294 /* EffectReflectionMetal.hpp */,
+				A9BCA1161C77604F00FB3294 /* EffectReflectionMetal.mm */,
+				A9BCA1171C77604F00FB3294 /* GraphicsContextMetal.hpp */,
+				A9BCA1181C77604F00FB3294 /* GraphicsContextMetal.mm */,
+				A9BCA1191C77604F00FB3294 /* GraphicsDeviceMetal.hpp */,
+				A9BCA11A1C77604F00FB3294 /* GraphicsDeviceMetal.mm */,
+				A9BCA11B1C77604F00FB3294 /* MetalFormatHelper.hpp */,
+				A9BCA11C1C77604F00FB3294 /* MetalFormatHelper.mm */,
+				A9BCA11D1C77604F00FB3294 /* PipelineStateMetal.hpp */,
+				A9BCA11E1C77604F00FB3294 /* PipelineStateMetal.mm */,
+				A9BCA11F1C77604F00FB3294 /* RenderTarget2DMetal.hpp */,
+				A9BCA1201C77604F00FB3294 /* RenderTarget2DMetal.mm */,
+				A9BCA1211C77604F00FB3294 /* SamplerStateMetal.hpp */,
+				A9BCA1221C77604F00FB3294 /* SamplerStateMetal.mm */,
+				A9BCA1231C77604F00FB3294 /* ShaderMetal.hpp */,
+				A9BCA1241C77604F00FB3294 /* ShaderMetal.mm */,
+				A9BCA1251C77604F00FB3294 /* Texture2DMetal.hpp */,
+				A9BCA1261C77604F00FB3294 /* Texture2DMetal.mm */,
+			);
+			path = RenderSystem.Metal;
+			sourceTree = "<group>";
+		};
 		AAF4E64073F0BBFB4C0B0C43 /* Signals */ = {
 			isa = PBXGroup;
 			children = (
@@ -1293,6 +1486,7 @@
 				A9D641901C343012006E14E0 /* AudioToolbox.framework */,
 				AAF6F831C87CDE6EB35B140C /* AudioToolBox.framework */,
 				F247CD851F16A8BCEC2E5BA1 /* Cocoa.framework */,
+				A9BCA1311C77609E00FB3294 /* Metal.framework */,
 				E67C9ABE05AB8179C6615644 /* OpenAL.framework */,
 				EB039FAE65C607A60DDBB49C /* OpenGL.framework */,
 				A0AE4521498F69CE846F2EFB /* QuartzCore.framework */,
@@ -1390,6 +1584,24 @@
 			productReference = 9C362E5974D2BDFA88D4823E /* libpomdog.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		A9BCA07F1C775F1200FB3294 /* Pomdog Mac + Metal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9BCA0EC1C775F1200FB3294 /* Build configuration list for PBXNativeTarget "Pomdog Mac + Metal" */;
+			buildPhases = (
+				A9BCA0841C775F1200FB3294 /* Sources */,
+				A9BCA0E41C775F1200FB3294 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9BCA0801C775F1200FB3294 /* PBXTargetDependency */,
+				A9BCA0821C775F1200FB3294 /* PBXTargetDependency */,
+			);
+			name = "Pomdog Mac + Metal";
+			productName = pomdog;
+			productReference = A9BCA0EF1C775F1200FB3294 /* libpomdog+Metal.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1422,6 +1634,7 @@
 			targets = (
 				90A40D610E26489DCF2799C5 /* Pomdog Mac (libpomdog.a) */,
 				71A79DF0C5C7BA4F7EB13021 /* Pomdog Mac (Pomdog.framework) */,
+				A9BCA07F1C775F1200FB3294 /* Pomdog Mac + Metal */,
 			);
 		};
 /* End PBXProject section */
@@ -1648,6 +1861,118 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9BCA0841C775F1200FB3294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9BCA0851C775F1200FB3294 /* GameClock.cpp in Sources */,
+				A9BCA0861C775F1200FB3294 /* Timer.cpp in Sources */,
+				A9BCA0871C775F1200FB3294 /* AudioClip.cpp in Sources */,
+				A9BCA0881C775F1200FB3294 /* AudioEngine.cpp in Sources */,
+				A9BCA0891C775F1200FB3294 /* SoundEffect.cpp in Sources */,
+				A9BCA08A1C775F1200FB3294 /* AssetDictionary.cpp in Sources */,
+				A9BCA08B1C775F1200FB3294 /* AssetLoaderContext.cpp in Sources */,
+				A9BCA08C1C775F1200FB3294 /* AssetManager.cpp in Sources */,
+				A9BCA12C1C77604F00FB3294 /* PipelineStateMetal.mm in Sources */,
+				A9BCA08D1C775F1200FB3294 /* PipelineStateBuilder.cpp in Sources */,
+				A9BCA08E1C775F1200FB3294 /* ShaderBuilder.cpp in Sources */,
+				A9BCA08F1C775F1200FB3294 /* AudioClipLoader.cpp in Sources */,
+				A9BCA0901C775F1200FB3294 /* Texture2DLoader.cpp in Sources */,
+				A9BCA0911C775F1200FB3294 /* DDSTextureReader.cpp in Sources */,
+				A9BCA0921C775F1200FB3294 /* MSWaveAudioLoader.cpp in Sources */,
+				A9BCA0931C775F1200FB3294 /* PNGTextureReader.cpp in Sources */,
+				A9BCA0941C775F1200FB3294 /* ClearOptions.cpp in Sources */,
+				A9BCA0951C775F1200FB3294 /* ConstantBuffer.cpp in Sources */,
+				A9BCA0961C775F1200FB3294 /* EffectBinaryParameter.cpp in Sources */,
+				A9BCA0971C775F1200FB3294 /* EffectReflection.cpp in Sources */,
+				A9BCA0981C775F1200FB3294 /* GraphicsCommandList.cpp in Sources */,
+				A9BCA0991C775F1200FB3294 /* GraphicsCommandQueue.cpp in Sources */,
+				A9BCA09A1C775F1200FB3294 /* GraphicsDevice.cpp in Sources */,
+				A9BCA09B1C775F1200FB3294 /* IndexBuffer.cpp in Sources */,
+				A9BCA09C1C775F1200FB3294 /* InputLayoutHelper.cpp in Sources */,
+				A9BCA09D1C775F1200FB3294 /* PipelineState.cpp in Sources */,
+				A9BCA09E1C775F1200FB3294 /* RenderTarget2D.cpp in Sources */,
+				A9BCA09F1C775F1200FB3294 /* SamplerState.cpp in Sources */,
+				A9BCA0A01C775F1200FB3294 /* Texture2D.cpp in Sources */,
+				A9BCA0A11C775F1200FB3294 /* Viewport.cpp in Sources */,
+				A9BCA0A21C775F1200FB3294 /* VertexBuffer.cpp in Sources */,
+				A9BCA0A31C775F1200FB3294 /* GLSLCompiler.cpp in Sources */,
+				A9BCA12F1C77604F00FB3294 /* ShaderMetal.mm in Sources */,
+				A9BCA0A41C775F1200FB3294 /* Coordinate2D.cpp in Sources */,
+				A9BCA0A51C775F1200FB3294 /* HLSLCompiler.cpp in Sources */,
+				A9BCA0A61C775F1200FB3294 /* KeyboardState.cpp in Sources */,
+				A9BCA0A71C775F1200FB3294 /* InputDeviceFactory.cpp in Sources */,
+				A9BCA1271C77604F00FB3294 /* BufferMetal.mm in Sources */,
+				A9BCA0A81C775F1200FB3294 /* Log.cpp in Sources */,
+				A9BCA0A91C775F1200FB3294 /* LogChannel.cpp in Sources */,
+				A9BCA0AA1C775F1200FB3294 /* BoundingBox.cpp in Sources */,
+				A9BCA0AB1C775F1200FB3294 /* BoundingBox2D.cpp in Sources */,
+				A9BCA0AC1C775F1200FB3294 /* BoundingCircle.cpp in Sources */,
+				A9BCA0AD1C775F1200FB3294 /* BoundingSphere.cpp in Sources */,
+				A9BCA0AE1C775F1200FB3294 /* Color.cpp in Sources */,
+				A9BCA0AF1C775F1200FB3294 /* MathHelper.cpp in Sources */,
+				A9BCA0B01C775F1200FB3294 /* Ray.cpp in Sources */,
+				A9BCA0B11C775F1200FB3294 /* Rectangle.cpp in Sources */,
+				A9BCA0B21C775F1200FB3294 /* FloatingPointMatrix2x2.cpp in Sources */,
+				A9BCA0B31C775F1200FB3294 /* FloatingPointMatrix3x2.cpp in Sources */,
+				A9BCA1291C77604F00FB3294 /* GraphicsContextMetal.mm in Sources */,
+				A9BCA0B41C775F1200FB3294 /* FloatingPointMatrix3x3.cpp in Sources */,
+				A9BCA0B51C775F1200FB3294 /* FloatingPointMatrix4x4.cpp in Sources */,
+				A9BCA0B61C775F1200FB3294 /* FloatingPointQuaternion.cpp in Sources */,
+				A9BCA12A1C77604F00FB3294 /* GraphicsDeviceMetal.mm in Sources */,
+				A9BCA1281C77604F00FB3294 /* EffectReflectionMetal.mm in Sources */,
+				A9BCA0B71C775F1200FB3294 /* FloatingPointVector2.cpp in Sources */,
+				A9BCA0B81C775F1200FB3294 /* FloatingPointVector3.cpp in Sources */,
+				A9BCA0B91C775F1200FB3294 /* FloatingPointVector4.cpp in Sources */,
+				A9BCA0BA1C775F1200FB3294 /* GraphicsCommandListImmediate.cpp in Sources */,
+				A9BCA0BB1C775F1200FB3294 /* GraphicsCommandQueueImmediate.cpp in Sources */,
+				A9BCA12D1C77604F00FB3294 /* RenderTarget2DMetal.mm in Sources */,
+				A9BCA0BC1C775F1200FB3294 /* GraphicsContext.cpp in Sources */,
+				A9BCA0BD1C775F1200FB3294 /* SurfaceFormatHelper.cpp in Sources */,
+				A9BCA0BE1C775F1200FB3294 /* TextureHelper.cpp in Sources */,
+				A9BCA0BF1C775F1200FB3294 /* Connection.cpp in Sources */,
+				A9BCA1301C77604F00FB3294 /* Texture2DMetal.mm in Sources */,
+				A9BCA0C01C775F1200FB3294 /* ConnectionList.cpp in Sources */,
+				A9BCA12B1C77604F00FB3294 /* MetalFormatHelper.mm in Sources */,
+				A9BCA0C11C775F1200FB3294 /* EventQueue.cpp in Sources */,
+				A9BCA0C21C775F1200FB3294 /* ScopedConnection.cpp in Sources */,
+				A9BCA0C31C775F1200FB3294 /* CRC32.cpp in Sources */,
+				A9BCA0C41C775F1200FB3294 /* PathHelper.cpp in Sources */,
+				A9BCA0C51C775F1200FB3294 /* StringHelper.cpp in Sources */,
+				A9BCA0C61C775F1200FB3294 /* BlendStateGL4.cpp in Sources */,
+				A9BCA0C71C775F1200FB3294 /* BufferGL4.cpp in Sources */,
+				A9BCA0C81C775F1200FB3294 /* DepthStencilStateGL4.cpp in Sources */,
+				A9BCA0C91C775F1200FB3294 /* EffectReflectionGL4.cpp in Sources */,
+				A9BCA0CA1C775F1200FB3294 /* ErrorChecker.cpp in Sources */,
+				A9BCA0CB1C775F1200FB3294 /* Coordinate3D.cpp in Sources */,
+				A9BCA0CC1C775F1200FB3294 /* GraphicsContextGL4.cpp in Sources */,
+				A9BCA0CD1C775F1200FB3294 /* GraphicsDeviceGL4.cpp in Sources */,
+				A9BCA0CE1C775F1200FB3294 /* InputLayoutGL4.cpp in Sources */,
+				A9BCA0CF1C775F1200FB3294 /* PipelineStateGL4.cpp in Sources */,
+				A9BCA0D01C775F1200FB3294 /* RasterizerStateGL4.cpp in Sources */,
+				A9BCA0D11C775F1200FB3294 /* RenderTarget2DGL4.cpp in Sources */,
+				A9BCA0D21C775F1200FB3294 /* SamplerStateGL4.cpp in Sources */,
+				A9BCA12E1C77604F00FB3294 /* SamplerStateMetal.mm in Sources */,
+				A9BCA0D31C775F1200FB3294 /* ShaderGL4.cpp in Sources */,
+				A9BCA0D41C775F1200FB3294 /* Texture2DGL4.cpp in Sources */,
+				A9BCA0D51C775F1200FB3294 /* AudioClipAL.cpp in Sources */,
+				A9BCA0D61C775F1200FB3294 /* AudioEngineAL.cpp in Sources */,
+				A9BCA0D71C775F1200FB3294 /* ContextOpenAL.cpp in Sources */,
+				A9BCA0D81C775F1200FB3294 /* ErrorCheckerAL.cpp in Sources */,
+				A9BCA0D91C775F1200FB3294 /* SoundEffectAL.cpp in Sources */,
+				A9BCA0DA1C775F1200FB3294 /* Bootstrap.mm in Sources */,
+				A9BCA0DB1C775F1200FB3294 /* CocoaWindowDelegate.mm in Sources */,
+				A9BCA0DC1C775F1200FB3294 /* GameHostCocoa.mm in Sources */,
+				A9BCA0DD1C775F1200FB3294 /* GameWindowCocoa.mm in Sources */,
+				A9BCA0DE1C775F1200FB3294 /* KeyboardCocoa.cpp in Sources */,
+				A9BCA0DF1C775F1200FB3294 /* MouseCocoa.cpp in Sources */,
+				A9BCA0E01C775F1200FB3294 /* OpenGLContextCocoa.mm in Sources */,
+				A9BCA0E11C775F1200FB3294 /* PomdogOpenGLView.mm in Sources */,
+				A9BCA0E21C775F1200FB3294 /* FileSystemApple.mm in Sources */,
+				A9BCA0E31C775F1200FB3294 /* TimeSourceApple.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1660,6 +1985,16 @@
 			isa = PBXTargetDependency;
 			name = zlib_static;
 			targetProxy = AF51FD32A252F532881CF170 /* PBXContainerItemProxy */;
+		};
+		A9BCA0801C775F1200FB3294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libpng_static;
+			targetProxy = A9BCA0811C775F1200FB3294 /* PBXContainerItemProxy */;
+		};
+		A9BCA0821C775F1200FB3294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zlib_static;
+			targetProxy = A9BCA0831C775F1200FB3294 /* PBXContainerItemProxy */;
 		};
 		A9D641891C342FBF006E14E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1725,6 +2060,36 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = pomdog;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A9BCA0ED1C775F1200FB3294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "pomdog+Metal";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A9BCA0EE1C775F1200FB3294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "pomdog+Metal";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1867,6 +2232,15 @@
 			buildConfigurations = (
 				230A99FDE8FD8845A9874DF8 /* Release */,
 				7964C7887D0FDAB96E0E3F26 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Release;
+		};
+		A9BCA0EC1C775F1200FB3294 /* Build configuration list for PBXNativeTarget "Pomdog Mac + Metal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9BCA0ED1C775F1200FB3294 /* Release */,
+				A9BCA0EE1C775F1200FB3294 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 1;
 			defaultConfigurationName = Release;
