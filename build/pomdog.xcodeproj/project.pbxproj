@@ -166,6 +166,10 @@
 		A992AF031C2B1168003170C9 /* Coordinate2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A992AF001C2B1168003170C9 /* Coordinate2D.cpp */; };
 		A992AF041C2B1168003170C9 /* Coordinate3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A992AF011C2B1168003170C9 /* Coordinate3D.cpp */; };
 		A992AF051C2B1168003170C9 /* Coordinate3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A992AF011C2B1168003170C9 /* Coordinate3D.cpp */; };
+		A9BCA1431C78254200FB3294 /* GraphicsCommandListVulkan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA13F1C78254200FB3294 /* GraphicsCommandListVulkan.cpp */; };
+		A9BCA1441C78254200FB3294 /* GraphicsCommandListVulkan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA13F1C78254200FB3294 /* GraphicsCommandListVulkan.cpp */; };
+		A9BCA1451C78254200FB3294 /* GraphicsCommandQueueVulkan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1411C78254200FB3294 /* GraphicsCommandQueueVulkan.cpp */; };
+		A9BCA1461C78254200FB3294 /* GraphicsCommandQueueVulkan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BCA1411C78254200FB3294 /* GraphicsCommandQueueVulkan.cpp */; };
 		A9D641861C342F59006E14E0 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE06E0DEEBFD77A7D8BBB0 /* libpng.a */; };
 		A9D641871C342F5F006E14E0 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DEC4E495A2A3E49BFD61E5 /* libzlib.a */; };
 		A9D641911C343012006E14E0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D641901C343012006E14E0 /* AudioToolbox.framework */; };
@@ -505,6 +509,10 @@
 		A992AF001C2B1168003170C9 /* Coordinate2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coordinate2D.cpp; sourceTree = "<group>"; };
 		A992AF011C2B1168003170C9 /* Coordinate3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coordinate3D.cpp; sourceTree = "<group>"; };
 		A9AE680DD0E3FCEA11AF8F48 /* FloatingPointVector4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FloatingPointVector4.cpp; sourceTree = "<group>"; };
+		A9BCA13F1C78254200FB3294 /* GraphicsCommandListVulkan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsCommandListVulkan.cpp; sourceTree = "<group>"; };
+		A9BCA1401C78254200FB3294 /* GraphicsCommandListVulkan.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GraphicsCommandListVulkan.hpp; sourceTree = "<group>"; };
+		A9BCA1411C78254200FB3294 /* GraphicsCommandQueueVulkan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsCommandQueueVulkan.cpp; sourceTree = "<group>"; };
+		A9BCA1421C78254200FB3294 /* GraphicsCommandQueueVulkan.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GraphicsCommandQueueVulkan.hpp; sourceTree = "<group>"; };
 		A9D641901C343012006E14E0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AA4220AFBD6F377F07163A1E /* EffectAnnotation.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = EffectAnnotation.hpp; sourceTree = "<group>"; };
 		AAF6F831C87CDE6EB35B140C /* AudioToolBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolBox.framework; path = System/Library/Frameworks/AudioToolBox.framework; sourceTree = SDKROOT; };
@@ -1134,6 +1142,10 @@
 				A961F32D1C74B73800724CF2 /* BufferVulkan.hpp */,
 				A961F32E1C74B73800724CF2 /* EffectReflectionVulkan.cpp */,
 				A961F32F1C74B73800724CF2 /* EffectReflectionVulkan.hpp */,
+				A9BCA13F1C78254200FB3294 /* GraphicsCommandListVulkan.cpp */,
+				A9BCA1401C78254200FB3294 /* GraphicsCommandListVulkan.hpp */,
+				A9BCA1411C78254200FB3294 /* GraphicsCommandQueueVulkan.cpp */,
+				A9BCA1421C78254200FB3294 /* GraphicsCommandQueueVulkan.hpp */,
 				A961F3301C74B73800724CF2 /* GraphicsDeviceVulkan.cpp */,
 				A961F3311C74B73800724CF2 /* GraphicsDeviceVulkan.hpp */,
 				A961F3321C74B73800724CF2 /* PipelineStateVulkan.cpp */,
@@ -1547,6 +1559,7 @@
 				96250C0AF1475E290503FBF7 /* HLSLCompiler.cpp in Sources */,
 				6AC6140DEE87DAE2DC52FFE7 /* KeyboardState.cpp in Sources */,
 				6E7FC2384465DDDB5C5B0A25 /* InputDeviceFactory.cpp in Sources */,
+				A9BCA1431C78254200FB3294 /* GraphicsCommandListVulkan.cpp in Sources */,
 				1650793D0884E1424679277F /* Log.cpp in Sources */,
 				D5CAE3F16D482B36E58155CA /* LogChannel.cpp in Sources */,
 				5FC19F99728314D0AB72DDB8 /* BoundingBox.cpp in Sources */,
@@ -1570,6 +1583,7 @@
 				378F438407DEF79BEA69E81C /* GraphicsCommandListImmediate.cpp in Sources */,
 				F29D13A39818F150CD4219B3 /* GraphicsCommandQueueImmediate.cpp in Sources */,
 				F6ACD0A3DF47C65FA528016E /* GraphicsContext.cpp in Sources */,
+				A9BCA1451C78254200FB3294 /* GraphicsCommandQueueVulkan.cpp in Sources */,
 				1C60BD023919A0C8916DB3E2 /* SurfaceFormatHelper.cpp in Sources */,
 				E7645392D6AC421C2703DF5E /* TextureHelper.cpp in Sources */,
 				A961F3481C74B73800724CF2 /* SamplerStateVulkan.cpp in Sources */,
@@ -1658,6 +1672,7 @@
 				10C3C865D4638E1512AD0274 /* HLSLCompiler.cpp in Sources */,
 				2C6A8330B306F09980C8EFE0 /* KeyboardState.cpp in Sources */,
 				D7EAEFE80CEE8FFAA2DB9282 /* InputDeviceFactory.cpp in Sources */,
+				A9BCA1441C78254200FB3294 /* GraphicsCommandListVulkan.cpp in Sources */,
 				1F0E6CB61ABDCD22F870F258 /* Log.cpp in Sources */,
 				2253F43FA13A0B293FE79749 /* LogChannel.cpp in Sources */,
 				15C4EF0C411554073735CCF7 /* BoundingBox.cpp in Sources */,
@@ -1681,6 +1696,7 @@
 				650D5B589129410AF7580726 /* GraphicsCommandListImmediate.cpp in Sources */,
 				6FA8A4ED33396758E9052EAD /* GraphicsCommandQueueImmediate.cpp in Sources */,
 				4519841F68EB2E2836F4E02D /* GraphicsContext.cpp in Sources */,
+				A9BCA1461C78254200FB3294 /* GraphicsCommandQueueVulkan.cpp in Sources */,
 				A5F5B45161ACFD33A1652F9C /* SurfaceFormatHelper.cpp in Sources */,
 				55635C9F9A88D4C77235D6EB /* TextureHelper.cpp in Sources */,
 				A961F3491C74B73800724CF2 /* SamplerStateVulkan.cpp in Sources */,
