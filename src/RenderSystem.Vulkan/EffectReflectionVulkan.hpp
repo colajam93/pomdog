@@ -4,6 +4,7 @@
 
 #include "../RenderSystem/NativeEffectReflection.hpp"
 #include "Pomdog/Graphics/detail/ForwardDeclarations.hpp"
+#include <vulkan/vulkan.h>
 
 namespace Pomdog {
 namespace Detail {
@@ -11,8 +12,9 @@ namespace Vulkan {
 
 class EffectReflectionVulkan final : public NativeEffectReflection {
 public:
+    EffectReflectionVulkan();
 
-private:
+    std::vector<EffectConstantDescription> GetConstantBuffers() const override;
 };
 
 } // namespace Vulkan

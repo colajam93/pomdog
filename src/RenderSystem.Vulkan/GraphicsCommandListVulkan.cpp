@@ -1,12 +1,49 @@
 // Copyright (c) 2013-2016 mogemimi. Distributed under the MIT license.
 
 #include "GraphicsCommandListVulkan.hpp"
+#include "../RenderSystem/GraphicsCapabilities.hpp"
+#include "Pomdog/Math/Color.hpp"
+#include "Pomdog/Math/Vector4.hpp"
+#include "Pomdog/Math/Rectangle.hpp"
+#include "Pomdog/Graphics/ClearOptions.hpp"
+#include "Pomdog/Graphics/IndexBuffer.hpp"
+#include "Pomdog/Graphics/PresentationParameters.hpp"
+#include "Pomdog/Graphics/PrimitiveTopology.hpp"
+#include "Pomdog/Graphics/RenderTarget2D.hpp"
+#include "Pomdog/Graphics/Texture2D.hpp"
+#include "Pomdog/Graphics/VertexBuffer.hpp"
+#include "Pomdog/Graphics/VertexBufferBinding.hpp"
+#include "Pomdog/Graphics/Viewport.hpp"
 #include "Pomdog/Utility/Assert.hpp"
 #include "Pomdog/Utility/Exception.hpp"
 
 namespace Pomdog {
 namespace Detail {
 namespace Vulkan {
+namespace {
+
+VkPrimitiveTopology ToVkPrimitiveTopology(
+    PrimitiveTopology primitiveTopology) noexcept
+{
+    switch (primitiveTopology) {
+    case PrimitiveTopology::TriangleStrip: return VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP;
+    case PrimitiveTopology::TriangleList: return VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;
+    case PrimitiveTopology::LineList: return VK_PRIMITIVE_TOPOLOGY_LINE_LIST;
+    case PrimitiveTopology::LineStrip: return VK_PRIMITIVE_TOPOLOGY_LINE_STRIP;
+    }
+    return VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;
+}
+//-----------------------------------------------------------------------
+VkIndexType ToVkIndexType(IndexElementSize elementSize) noexcept
+{
+    switch (elementSize) {
+    case IndexElementSize::SixteenBits: return VK_INDEX_TYPE_UINT16;
+    case IndexElementSize::ThirtyTwoBits: return VK_INDEX_TYPE_UINT32;
+    }
+    return VK_INDEX_TYPE_UINT16;
+}
+
+} // unnamed namespace
 
 void GraphicsCommandListVulkan::Close()
 {

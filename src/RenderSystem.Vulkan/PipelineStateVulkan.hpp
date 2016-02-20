@@ -4,6 +4,7 @@
 
 #include "../RenderSystem/NativePipelineState.hpp"
 #include "Pomdog/Graphics/detail/ForwardDeclarations.hpp"
+#include <vulkan/vulkan.h>
 
 namespace Pomdog {
 namespace Detail {
