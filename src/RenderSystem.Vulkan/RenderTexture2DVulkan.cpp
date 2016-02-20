@@ -3,6 +3,7 @@
 #include "RenderTexture2DVulkan.hpp"
 #include "Pomdog/Graphics/DepthFormat.hpp"
 #include "Pomdog/Utility/Assert.hpp"
+#include "Pomdog/Utility/Exception.hpp"
 
 namespace Pomdog {
 namespace Detail {
